@@ -10516,9 +10516,7 @@ ul.rw {
 
 .hover-box1:hover img:not(.no-scale) ,
 .hover-box1:hover .img-wrp:not(.no-scale) {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+
 }
 
 .hover-box1:hover .hover-hide {
@@ -36639,7 +36637,7 @@ a.link-color6 {
 }
 
 .bg-dark1 {
-    background-color: #1f2229;
+    background-color: #00A1AA;
 }
 
 .bg-dark2 {

@@ -406,12 +406,21 @@ nc.videoBg = function(obj, imglist) {
     /*------------ MENU CHANGE -----------*/
     setInterval(function(){
         var btn = document.getElementById("btn");
+        var fleche = document.getElementById("fleche");
+        var logo = document.getElementById("logo");
 
         if(document.getElementById("page-wrapper").scrollTop >= 723){
             btn.style.backgroundColor = "rgb(203, 38, 132)";
+            fleche.style.display = 'none';
+            logo.style.opacity = '0'
+
         }
         else {
             btn.style.backgroundColor = "";
+            fleche.style.display = 'block';
+            logo.style.opacity = '1'
+
+
         }
 
 
