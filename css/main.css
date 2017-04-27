@@ -510,17 +510,15 @@ hr.hr-1 {
 /*----------  CONTACT-BOXES-1  ----------*/
 
 .contact-boxes-1 {
-    background-color: rgb(149, 27, 128);
+    background-color: rgb(203,38, 132);;
 }
 
-.contact-box-1 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
+
 
 .contact-box-1 .icon {
     float: left;
     width: 1000px;
-    height: 60px;
+    height: 200px;
     color: #fff;
     font-size: 55px;
 }
