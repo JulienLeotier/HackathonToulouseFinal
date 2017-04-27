@@ -348,7 +348,7 @@ hr.hr-1 {
 /*----------  NAVIGATION-1  ----------*/
 
 .navigatio-wrp-1 .navlink .icon {
-    height: 100px;
+    height: 80px;
     font-size: 36px;
 }
 
@@ -488,7 +488,7 @@ hr.hr-1 {
 .social-links a.twitter:hover { background-color: #00aced; color: #fff; }
 
 
-/*----------  SOICAL-LINKS-1  ----------*/
+/*----------  SOCIAL-LINKS-1  ----------*/
 .social-links-1 .link {
 	width: 50px;
 	height: 50px;
@@ -619,24 +619,25 @@ hr.hr-1 {
 /*---------- INTRO----------------------*/
 
 .logowild {
+    margin-top: 5%;
     width: 20%;
-    margin-left: 20%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .logotoulouse {
     width: 20%;
-    margin-left: 20%;
+    margin-top: 6%;
+    margin-bottom: 4%;
 }
 
 .textpresentation {
     background: linear-gradient(to bottom, rgb(149, 27, 128), rgb(203, 38, 132));
     color: white;
     font-family: 'roboto';
-    font-size: 130%;
+    font-size: 110%;
     text-align: center;
-    width: 100%;
 }
+
 
 #logo {
     position: fixed;
@@ -644,8 +645,10 @@ hr.hr-1 {
     top: 20px;
 }
 #introplus{
-    width: 4%;
+    position: absolute;
+    margin-left: -1%;
+    width: 2%;
 }
 #introplus:hover {
-    width: 5%;
+    width: 2.2%;
 }
