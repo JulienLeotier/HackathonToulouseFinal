@@ -69,17 +69,42 @@
 
 	#page-wrapper { width: 100%; }
 	#page-wrapper.full { width: 100%; }
-	.home-page .container { width: 90%; }
-	.content-page .container { width: 95%; }
+	.home-page .container { width: 100%; }
+	.content-page .container { width: 100%; }
 
 	/*----------  CONTACT US  ----------*/
-	.contact-section-1 .contact-info > .container { width: 90%; }
+	.contact-section-1 .contact-info > .container { width: 100%; }
 	.contact-section-1 .contact-boxes-1 { margin-bottom: 95%; }
 	.image{
 			top:17%;
 			left: 48%;
 		}
-
+	.savoir{
+		margin-top: 12% !important;
+	}
+	.basgauche{
+		height: 183px !important;
+		font-size: 12px;
+	}
+	.basdroite{
+		height: 272px !important;
+		font-size: 12px;
+	}
+	#partenaires{
+		padding-top: 21.1% !important;
+	}
+	.haut{
+		height: 45vh !important;
+	}
+	img.twit{
+		width: 60% !important;
+	}
+	#fin{
+		margin-left: -100px;
+	}
+	#message{
+		margin-left: 0;
+	}
 
 }
 

@@ -35,7 +35,6 @@ var Formstone=this.Formstone=function(a,b,c){"use strict";function d(a){l.Plugin
 		return this;
 
 	};
-
 	$.fn.stopCountDown = function () {
 		clearTimeout($.data(this[0], 'timer'));
 	};
@@ -76,6 +75,7 @@ var Formstone=this.Formstone=function(a,b,c){"use strict";function d(a){l.Plugin
 			diffSecs = 0;
 			if ($.data($this[0], 'timer'))
 			{
+				console.log("coucou");
 				clearTimeout($.data($this[0], 'timer'));
 			}
 		}
