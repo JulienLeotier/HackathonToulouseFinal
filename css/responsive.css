@@ -235,9 +235,7 @@
 	#page-wrapper { width: 100%; }
 	#page-wrapper.full { width: 100%; }
 	#page-wrapper.active-home { height: auto; min-height: auto; }
-	.bt-menu-trigger span,
-	.bt-menu-trigger span:before,
-	.bt-menu-trigger span:after { background-color: #363636; }
+
 	.title-wrp { margin-bottom: 40px; }
 
 
@@ -266,10 +264,7 @@
 		margin-left: -20px;
 		width: 40px;
 	}
-	body.dark-theme .bt-menu-open .bt-menu-trigger span:before,
-	body.dark-theme .bt-menu-open .bt-menu-trigger span:after {
-		background-color: #000;
-	}
+
 
 	/*----------  HOME  ----------*/
 
@@ -296,10 +291,7 @@
 		margin-left: -20px;
 		width: 40px;
 	}
-	body.dark-theme .bt-menu-open .bt-menu-trigger span:before,
-	body.dark-theme .bt-menu-open .bt-menu-trigger span:after {
-		background-color: #000;
-	}
+
 
 	/*----------  HOME  ----------*/
 	.clock.clock-1 .countdown-widget .inner-dash { font-size: 60px; }
@@ -321,10 +313,7 @@
 		width: 40px;
 		height: 40px;
 	}
-	body.dark-theme .bt-menu-open .bt-menu-trigger span:before,
-	body.dark-theme .bt-menu-open .bt-menu-trigger span:after {
-		background-color: #000;
-	}
+
 	.bt-menu-trigger span {
 		width: 30px;
 		left: 50%;
@@ -379,5 +368,81 @@
 	.image{
 			top:16%;
 			left: 48%;
+		}
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .title{
+        font-size: 7px !important;
+    }
+    .txtgauche{
+        font-size: 7px !important;
+    }
+    .txtdroite{
+        font-size: 7px !important;
+    }
+    .haut {
+			  overflow: scroll !important;
+    }
+		#titre{
+			font-size: 18px !important;
+			}
+			#titre1{
+				font-size: 18px !important;
+			}
+			.bt-menu ul{
+				left:30%;
+		}
+		.navigatio-wrp-1 .navlink .icon {
+			height: 20px;
+			font-size: 24px;
+		}
+		.f-2{
+			font-size: 12px !important;
+		}
+		#partenaires{
+			padding-top: 68% !important;
+			padding-bottom: 40% !important;
+		}
+		#titrepar{
+			font-size: 320% !important;
+		}
+		.titre{
+			margin-top: 0 !important;
+			font-size: 20px !important;
+		}
+		.texte{
+			font-size: 8px;
+		}
+		.titreprog h1 {
+	    font-size: 200% !important;
+		}
+	#titre{
+		font-size: 18px !important;
+		}
+		#titre1{
+			font-size: 18px !important;
+		}
+		#p1{
+			font-size: 10px !important;
+		}
+		#p2{
+			font-size: 10px !important;
+		}
+		#p3{
+			font-size: 16px !important;
+		}
+	 .contact-boxes-1 .icon {
+			height:0px !important;
+		}
+		#tit{
+			padding: 0 !important;
+		}
+		.contact-section-1 .inner-wrpper {
+			height: auto;
+		}
+		.savoir{
+			margin-top: 20% !important;
 		}
 }
