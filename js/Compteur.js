@@ -37,6 +37,8 @@ var Formstone=this.Formstone=function(a,b,c){"use strict";function d(a){l.Plugin
 	};
 	$.fn.stopCountDown = function () {
 		clearTimeout($.data(this[0], 'timer'));
+		clearTimeout($.data($this[0], t));
+
 	};
 
 	$.fn.startCountDown = function () {
@@ -44,6 +46,8 @@ var Formstone=this.Formstone=function(a,b,c){"use strict";function d(a){l.Plugin
 	};
 
 	$.fn.setCountDown = function (options) {
+		console.log(this[0]);
+
 		var targetTime = new Date();
 		if (options.targetDate)
 		{
@@ -75,7 +79,7 @@ var Formstone=this.Formstone=function(a,b,c){"use strict";function d(a){l.Plugin
 			diffSecs = 0;
 			if ($.data($this[0], 'timer'))
 			{
-				console.log("coucou");
+				clearTimeout($.data($this[0], t));
 				clearTimeout($.data($this[0], 'timer'));
 			}
 		}
