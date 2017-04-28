@@ -37,7 +37,6 @@ var Formstone=this.Formstone=function(a,b,c){"use strict";function d(a){l.Plugin
 	};
 	$.fn.stopCountDown = function () {
 		clearTimeout($.data(this[0], 'timer'));
-		clearTimeout($.data($this[0], t));
 
 	};
 
