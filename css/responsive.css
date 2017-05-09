@@ -5,6 +5,9 @@
 	.contact-section-1 .contact-boxes-1 {
 		margin-bottom: 72%;
 	}
+		.savoir {
+		margin-top: 5% !important;
+	}
 }
 
 @media (min-width: 1700px) and (max-width: 1899px) {
