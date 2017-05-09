@@ -1,5 +1,7 @@
 @media (min-width: 1900px) {
-
+	.container{
+		margin-left: 25% !important;
+	}
 	.contact-section-1 .contact-boxes-1 { margin-bottom: 72%; }
 
 }

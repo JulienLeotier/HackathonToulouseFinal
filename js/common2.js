@@ -145,15 +145,6 @@ nc.countdown = function(obj) {
     });
 }
 
-/*----------  BACKGROUND SLIDER  ----------*/
-nc.bgSlider = function(setting) {
-    'use strict';
-    $(setting.obj).vegas({
-        delay: setting.delay,
-        slides: setting.slides,
-        animation: setting.effect
-    });
-}
 
 /*----------  ANIMATION OUT  ----------*/
 nc.animationOut = function(obj) {
@@ -232,6 +223,7 @@ nc.videoBg = function(obj, imglist) {
     'use strict';
 
     $(window).load(function() {
+        console.log("coucou")
 
         /*----------  PAGE-LOADER  ----------*/
         if (nc.elcheck(".page-loader-wrapper")) {
@@ -243,67 +235,6 @@ nc.videoBg = function(obj, imglist) {
     jQuery(document).ready(function($) {
 
         $('html').before('<!-- ' + package_ver + ' -->');
-
-        /*------------- Plus TRANSITION ------------------*/
-        if (nc.elcheck("#plus")) {
-            $("#plus").on("click", function() {
-                var pageWrapper = $("#page-wrapper");
-                var animated = ".animated"
-                var delay1 = 100;
-                var delay2 = 100;
-                var pageUrl = $(this).attr("data-page");
-
-                if (pageUrl == "home-page") {
-                    nc.animationOut("#pages");
-
-                    setTimeout(function() {
-                        $("#pages").html(" ");
-                        pageWrapper.removeClass("full");
-                        pageWrapper.addClass("active-home");
-
-                        setTimeout(function() {
-                            if (nc.elcheck(animated)) {
-                                $("#page-wrapper .home-page").removeClass("hidden");
-                                $(".text-animarion").removeClass("hide-text");
-                                nc.animationIn(".home-page");
-                                nc.animationIn(".text-animarion");
-                            }
-                        }, delay1);
-                    }, delay2);
-                } else {
-                    if (pageWrapper.hasClass("active-home")) {
-                        if (nc.elcheck(animated)) {
-                            nc.animationOut(".home-page");
-                            nc.animationOut(".text-animarion");
-                        }
-
-                        setTimeout(function() {
-                            pageWrapper.removeClass("active-home");
-                            $("#page-wrapper .home-page").addClass("hidden");
-                            $(".text-animarion").addClass("hide-text");
-                            pageWrapper.addClass("full");
-                            setTimeout(function() {
-                                $.get(pageUrl, function(data) {
-                                    $("#pages").html(data);
-                                    nc.animationIn("#pages");
-                                    nc.common();
-                                });
-                            }, delay1);
-                        }, delay2);
-                    } else {
-                        nc.animationOut("#pages");
-                        setTimeout(function() {
-                            $("#pages").html(" ");
-                            $.get(pageUrl, function(data) {
-                                $("#pages").html(data);
-                                nc.animationIn("#pages");
-                                nc.common();
-                            });
-                        }, delay1);
-                    }
-                }
-            });
-        }
 
         nc.common();
 
@@ -403,27 +334,4 @@ nc.videoBg = function(obj, imglist) {
 
     });
 })();
-    /*------------ MENU CHANGE -----------*/
-    setInterval(function(){
-        var btn = document.getElementById("btn");
-
-        if(document.getElementById("page-wrapper").scrollTop >= 523){
-            btn.style.backgroundColor = "rgb(203, 38, 132)";
-        }
-        else {
-            btn.style.backgroundColor = "";
-        }
-
-
-    }, 150);
-
-    setInterval(function(){
-        var fleche = document.getElementById("fleche");
-        fleche.style.transition = "2s opacity";
-        if(fleche.style.opacity == "0"){
-            fleche.style.opacity = "1";
-        }
-        else{
-            fleche.style.opacity = "0";
-        }
-    }, 1000)
+   

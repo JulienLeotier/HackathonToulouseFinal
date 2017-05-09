@@ -447,6 +447,7 @@ hr.hr-1 {
     color: #fff;
     padding: 15px 0 10px 0;
     border-radius: 5px;
+    text-align: center;
 }
 
 .clock.clock-1 .countdown-widget .dash {
