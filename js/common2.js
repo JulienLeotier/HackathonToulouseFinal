@@ -79,17 +79,18 @@ nc.countdown = function(obj) {
     var secondDate = new Date(d.getFullYear(), d.getMonth(), d.getDate());
     var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay)));
     if (d.getFullYear() == config.year && d.getMonth() == config.month - 1 && d.getDate() >= config.day) {
-        var countdownHtml = '<div  style="overflow: hidden">';
+        var countdownHtml = '<div  style="overflow: hidden; position: fixed; left: -10%; top: 40%; width: 100%;">';
         countdownHtml += '<h1 id="fin">Fini !</h1>'
         countdownHtml += '<p id= "message">L\'évènement Open Data à déjà eu lieu !<br/> Découvrez les équipes gagnantes </p></div>'
     } else if (d.getFullYear() == config.year && d.getMonth() > config.month - 1) {
-        var countdownHtml = '<div style="overflow: hidden">';
+        var countdownHtml = '<div style="overflow: hidden; position: fixed; left: -10%; top: 40%; width: 100%">';
         countdownHtml += '<h1 id="fin">Fini !</h1>'
         countdownHtml += '<p id="message">L\'évènement Open Data à déjà eu lieu !<br/>Découvrez les équipes gagnantes </p></div>'
     } else if (d.getFullYear() > config.year) {
-        var countdownHtml = '<div  style="overflow: hidden; position: fixed; left: 35%; top: 45%">';
+        var countdownHtml = '<div  style="overflow: hidden; position: fixed; left: -10%; top: 10%; width: 100%;">';
         countdownHtml += '<h1 id="fin">Fini !</h1>'
-        countdownHtml += '<p id="message">L\'évènement Open Data à déjà eu lieu !<br/>Découvrez les équipes gagnantes </p></div>'
+        countdownHtml += '<p id="message">L\'évènement Open Data à déjà eu lieu !<br/>Découvrez les équipes gagnantes </p><br><a>Twitter</a></div>'
+        
     } else {
         var countdownHtml = '<div class="inner-dashboard">';
         countdownHtml += '	<!-- DAYS -->';
