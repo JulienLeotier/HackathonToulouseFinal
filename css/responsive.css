@@ -8,6 +8,7 @@
 		.savoir {
 		margin-top: 5% !important;
 	}
+
 }
 
 @media (min-width: 1700px) and (max-width: 1899px) {
@@ -23,6 +24,15 @@
 	.image {
 		top: 13%;
 		left: 48%;
+	}
+	.haut{
+		height: 33vh !important; 
+	}
+	.title{
+		margin: 0%;
+	}
+	.partenaires{
+		font-size: 10px !important;
 	}
 }
 
@@ -90,6 +100,9 @@
 	.contact-section-1 .contact-boxes-1 {
 		margin-bottom: 75%;
 	}
+	.basgauche{
+		height: 200px !important;
+	}
 }
 
 @media (min-width: 1200px) and (max-width: 1299px) {
@@ -115,6 +128,9 @@
 	.image {
 		top: 14%;
 		left: 48%;
+	}
+	.basgauche{
+		height: 200px !important;
 	}
 }
 
@@ -146,18 +162,18 @@
 		margin-top: 12% !important;
 	}
 	.basgauche {
-		height: 183px !important;
+		height: 170px !important;
 		font-size: 12px;
 	}
 	.basdroite {
-		height: 272px !important;
+		height: 295px !important;
 		font-size: 12px;
 	}
 	#partenaires {
 		padding-top: 21.1% !important;
 	}
 	.haut {
-		height: 45vh !important;
+		height: 70vh !important;
 	}
 	img.twit {
 		width: 60% !important;
@@ -200,6 +216,7 @@
 		width: 100%;
 		height: 300px;
 	}
+	
 }
 
 
@@ -243,8 +260,8 @@
 		margin-top: 12% !important;
 	}
 	.basgauche {
-		height: 140px !important;
-		font-size: 11px;
+		height: 120px !important;
+		font-size: 8px;
 		padding: 3% !important;
 	}
 	.basdroite {
@@ -255,7 +272,7 @@
 		padding-top: 21.1% !important;
 	}
 	.haut {
-		height: 45vh !important;
+		height: 70vh !important;
 	}
 	img.twit {
 		width: 60% !important;
@@ -373,6 +390,10 @@
 		top: 16%;
 		left: 48%;
 	}
+	.basgauche{
+		font-size: 8px;
+		height: 100px !important;
+	}
 }
 
 @media (min-width: 480px) and (max-width: 599px) {
@@ -412,6 +433,13 @@
 	.image {
 		top: 16%;
 		left: 48%;
+	}
+	.basgauche{
+		font-size: 6px;
+		height: 80px !important;
+	}
+	.haut{
+		height: 60vh !important;
 	}
 }
 
@@ -505,6 +533,17 @@
 		top: 16%;
 		left: 48%;
 	}
+	.basgauche{
+		font-size: 5px;
+		padding: 0 !important;
+		height: 48px !important;
+	}
+	.basdroite{
+		font-size: 10px;
+	}
+	.haut{
+		height: 70vh !important;
+	}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -519,6 +558,7 @@
 	}
 	.haut {
 		overflow: scroll !important;
+		height: 70vh  !important;
 	}
 	#titre {
 		font-size: 18px !important;
@@ -579,5 +619,13 @@
 	}
 	.savoir {
 		margin-top: 20% !important;
+	}
+	.basgauche{
+		font-size: 5px;
+		padding: 0 !important;
+		height: 50px !important;
+	}
+	.basdroite{
+		font-size: 10px;
 	}
 }
